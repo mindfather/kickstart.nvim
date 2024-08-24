@@ -1,6 +1,7 @@
 require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'numToStr/Comment.nvim', -- "gc" to comment visual regions/lines
+
   {
     'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
@@ -34,16 +35,25 @@ require('lazy').setup({
       end
     end,
   },
+  {
+    'goolord/alpha-nvim',
+    config = function()
+      require('alpha').setup(require('alpha.themes.dashboard').config)
+    end,
+  },
+
+  require 'plugins/treesitter',
   require 'plugins/gitsigns',
   require 'plugins/which-key',
   require 'plugins/telescope',
   require 'plugins/lspconfig',
   require 'plugins/conform',
   require 'plugins/completion',
-  require 'plugins/treesitter',
   require 'plugins/neogit',
   require 'plugins/leetcode',
   require 'plugins/org',
+  require 'plugins/llm',
+  require 'plugins/zen',
 
   require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',

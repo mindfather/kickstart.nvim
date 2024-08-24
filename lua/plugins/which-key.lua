@@ -9,6 +9,7 @@ return {
       { '<leader>c', group = '[C]ode' },
       { '<leader>d', group = '[D]ocument' },
       { '<leader>g', group = 'Neo[G]it' },
+      { '<leader>m', group = '[M]odel' },
       { '<leader>n', group = 'Org Roam' },
       { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       { '<leader>r', group = '[R]ename' },

@@ -3,6 +3,8 @@ vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
+require 'env'
+
 require 'options'
 require 'keymaps'
 require 'autocommands'

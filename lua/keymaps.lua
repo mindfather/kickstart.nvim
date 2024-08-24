@@ -19,7 +19,7 @@ vim.keymap.set('n', '<leader>ww', '<C-w>w', { desc = 'Move focus to the next win
 vim.keymap.set('n', '<leader>wp', '<C-w>p', { desc = 'Move focus to the previous window' })
 vim.keymap.set('n', '<leader>ws', '<C-w>s', { desc = 'Split window horizontally' })
 vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
-vim.keymap.set('n', '<leader>wq', '<C-w>q', { desc = 'Close current window' })
+vim.keymap.set('n', '<leader>wd', '<C-w>q', { desc = 'Close current window' })
 vim.keymap.set('n', '<leader>wo', '<C-w>o', { desc = 'Close all windows except current' })
 vim.keymap.set('n', '<leader>w=', '<C-w>=', { desc = 'Make all windows equal size' })
 vim.keymap.set('n', '<leader>w-', '<C-w>-', { desc = 'Decrease window height' })
